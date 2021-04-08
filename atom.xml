@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wsghr&#39;s blog</title>
+  
+  <subtitle>wsghr的博客</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-04-08T03:22:16.260Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Wsghr</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown简单使用举例</title>
+    <link href="http://example.com/2021/04/08/Markdown%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E4%B8%BE%E4%BE%8B/"/>
+    <id>http://example.com/2021/04/08/Markdown%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E4%B8%BE%E4%BE%8B/</id>
+    <published>2021-04-08T03:09:44.000Z</published>
+    <updated>2021-04-08T03:22:16.260Z</updated>
+    
+    <content type="html"><![CDATA[<p>此篇简单介绍了markdown的标签语法功能。</p><span id="more"></span><h1 id="大标题"><a href="#大标题" class="headerlink" title="大标题"></a>大标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h3 id="一，二级标题的简写"><a href="#一，二级标题的简写" class="headerlink" title="一，二级标题的简写"></a>一，二级标题的简写</h3><ul><li>一级标题，在文本下面添加一个或多个等号： =或======</li><li>二级标题，在文本下面添加一个或多个减号： -或——</li></ul><h1 id="php"><a href="#php" class="headerlink" title="php"></a>php</h1><h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><h5 id="对应的html标签："><a href="#对应的html标签：" class="headerlink" title="对应的html标签："></a>对应的html标签：</h5><ul><li>小于号： &lt;</li><li>大于号： &gt;</li></ul><p>如果没有标签，则默认是段落，两个段落之间隔一个空行即可。<br>若要主动换行，则隔两个空格，然后enter键即可。 比如：<br>比如，<br>比如，<br>比如。</p><p>创建md文件，打开首选项–&gt;package control –&gt;输入mdp,选择markdownlivepreview:open preview</p><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><blockquote><p>引用自javascript高级程序设计</p><h3 id="php-cn"><a href="#php-cn" class="headerlink" title="php.cn"></a>php.cn</h3><blockquote><p>ES6与Node.js是前端开发人员必修课程</p></blockquote><h3 id="php-cn-1"><a href="#php-cn-1" class="headerlink" title="php.cn"></a>php.cn</h3><blockquote><blockquote><p>引用是可以嵌套的，引用对应的标签是： &lt; blockquote &gt;</p></blockquote></blockquote></blockquote><h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><blockquote><p>语法： 使用三个或三个以上的* 或 - ，可以不连续</p><blockquote><p>注意：*和-在markdown语法中有特殊意义，在普通文本中引用需要用反斜线转义, 分割线对应标签： &lt; hr &gt;</p></blockquote></blockquote><p>比如： *** 或 —</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> <span class="string">&quot;这是代码&quot;</span>;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &#39;没有指定编程语言&#39;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir project</span><br><span class="line">$ <span class="built_in">cd</span> preoject</span><br></pre></td></tr></table></figure><h4 id="在段落中使用代码块"><a href="#在段落中使用代码块" class="headerlink" title="在段落中使用代码块"></a>在段落中使用代码块</h4><p>pdo连接数据库： <code>$pdo = new PDO(dsn, username, password)</code></p><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><blockquote><p>语法： [链接文本] (href属性的url地址,title的提示信息)</p></blockquote><p><a href="'http://www.php.cn'," title="国内最大的php学习平台">php中文网</a></p><!-- 如果想要更精准的控制链接，使用<a>标签 --><p><a href="http://www.baidu.com" title="百度首页" target="_blank">百度</a></p><h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><blockquote><p>语法： 分别被两个*包围的内容，会以粗体表示； 分别被一个*包围的内容，会以斜体表示。 注意：*要紧接内容，不能有空格</p></blockquote><p><strong>markdown</strong> 是一中书写工具， 可以转化为<em>html</em>文本</p><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><blockquote><p>语法：  </p><blockquote><p>无序列表： 用1个*或+或-，并以空格与列表项隔开，转为ul标签<br>有序列表： 从1个数字开始，并以空格与列表项隔开，转为ol标签</p></blockquote></blockquote><ul><li>前端开发工具<ul><li>html5</li><li>css3</li><li>js</li><li>函数库或开发框架<ul><li>jquery</li><li>vue.js</li><li>node.js</li></ul></li><li>webpack 前端资源打包转换器</li></ul></li></ul><!-- 注意： 如果有序列表的内容始终出入更新当中，建议只指明开始的序号即可，后面的序号自动生成 --><ul><li><p>商品分类</p><ol><li>家用电器</li><li>电脑配件</li><li>手机数码</li><li>服装百货</li></ol></li><li><p>学生姓名</p><ol start="0"><li>ytt</li><li>lsp</li><li>jas</li><li>pr</li></ol></li></ul><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ul><li>使用- 和 | 画出表格</li><li>数据对齐方式使用冒号: 控制</li></ul><p>name是居中对齐，age是右对齐</p><table><thead><tr><th>id</th><th align="center">name</th><th align="right">age</th></tr></thead><tbody><tr><td>1</td><td align="center">ytt</td><td align="right">26</td></tr><tr><td>2</td><td align="center">lsp</td><td align="right">27</td></tr></tbody></table><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><ul><li>图片的语法与链接相似，只需要在前面加一个感叹号</li><li><img src="%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80/url" alt="提示文本" title="title提示"></li></ul><!-- 如果要改变图片大小，只能写原生img标签--><img src="cat.jpg" alt="猫咪" title="可爱的猫咪">！[猫咪](cat.jpg '可爱的猫咪')<!-- 给img标签加链接，即在后面加一个括号，放进链接地址和title即可--><p><a href="http://www.baidu.com/" title="猫咪"><img src="cat.jpg" alt="猫咪" title="可爱的猫咪"></a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;此篇简单介绍了markdown的标签语法功能。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="markdown使用" scheme="http://example.com/tags/markdown%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wsghr测试文章</title>
+    <link href="http://example.com/2021/04/03/wsghr%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
+    <id>http://example.com/2021/04/03/wsghr%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</id>
+    <published>2021-04-03T13:02:31.000Z</published>
+    <updated>2021-04-08T03:56:42.882Z</updated>
+    
+    <content type="html"><![CDATA[<p>在需要截断的地方加入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在需要截断的地方加入：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;c</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
